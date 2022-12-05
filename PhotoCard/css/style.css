@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: rgb(35, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Photo card box  */
+
+.card{
+position: relative;
+width: 20%;
+height: 250px;
+text-align: center;
+background-color: rgb(223, 206, 206);
+padding: 15px 20px;
+margin: 10px 20px;
+border-radius: 1rem;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+/* Card hover  */
+
+.card:hover{
+    height: 450px;
+}
+.detail-container ul > .footsize{
+    list-style: none;
+    position: relative;
+    margin: 0px 7px;
+    left: 15%;
+    top: 10px;
+    padding: 2px 2px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.detail-container ul > .footsize:hover{
+    background-color: rgb(206, 199, 199);
+    border-radius: 0;
+    border: 0.5px solid black;
+}
+
+.detail-container ul{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-container > .size{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 2px;
+}
+.detail-container{
+    position: relative;
+    height: 100px;
+    transform: translateY(-500px);
+    display: none;
+}
+
+.card:hover > .detail-container{
+    display: block;
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.detail-container h2{
+    font-family: 'IBM Plex Mono', monospace;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+}
+
+.detail-container > .color{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 2px;
+}
+
+.detail-container ul > .color1{
+    list-style-type: none;
+    background-color: #201E1F;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-25px);   
+}
+.detail-container ul > .color2{
+    list-style-type: none;
+    background-color: #E7809C;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-25px);
+
+}
+.detail-container ul > .color3{
+    list-style-type: none;
+    background-color: #95122D;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-25px);
+    
+}
+.detail-container ul > .color4{
+    list-style-type: none;
+    background-color: #2F3E3D;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-25px);
+
+}
+
+.detail-container > ul{
+    position: relative;
+}
+.detail-container  > ul >li{
+    position: relative;
+    padding: 5px 5px;
+    top: 50px;
+    left: 45px;
+    width: 20px;
+    margin: 5px 7px;
+    border-radius: 50%;
+}
+
+.img{
+    width: 85%;
+    height: 250px;
+    position: relative;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #2F3E3D;
+    transform: translateY(-100px);
+    margin: auto;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+img{
+position: relative;
+width: 100%;
+height: 100%;
+border-radius: 1rem;
+transition: all 0.3s;
+}
+
+button{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 40%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover{
+    background-color: #2F3E3D;
+    color: aliceblue;
+}
+
+.cost{
+    position: absolute;
+    left: 10%;
+    top: 110%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.cost > span{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
