@@ -62,3 +62,9 @@ ul li:hover::before,ul li:hover::after{
     height: 20%;
     /* transform: rotate(360deg); */
 }
+ul > #price:hover::before,ul > #price:hover::after{
+    width: 20%;
+    height: 20%;
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
